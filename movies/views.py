@@ -3,9 +3,6 @@ from django.contrib import messages
 from airtable import Airtable
 import os
 
-AIRTABLE_API_KEY="keyvXSgQcm63o3NEC"
-AIRTABLE_MOVIESTABLE_BASE_ID="appxLDATKoa8pEys0"
-
 
 AT = Airtable(os.environ.get('AIRTABLE_MOVIESTABLE_BASE_ID', AIRTABLE_MOVIESTABLE_BASE_ID, ),
               'Movies ',
